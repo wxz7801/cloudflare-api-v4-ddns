@@ -17,9 +17,4 @@ Now the script also supports v6(AAAA DDNS Recoards)
 ----
 ![image.png](https://i.loli.net/2021/11/13/OMpjhUyubrwN6Lk.png)
 
-```
-bash <(curl -Ls https://git.io/cloudflare-ddns) -k cloudflare-api-key \
- -h host.example.com \     # fqdn of the record you want to update
- -z example.com \          # will show you all zones if forgot, but you need this
- -t A|AAAA                 # specify ipv4/ipv6, default: ipv4
-```
+需要在脚本内定义多个原域名和目标域名
